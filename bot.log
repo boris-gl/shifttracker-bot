@@ -1,0 +1,705 @@
+2025-12-23 13:07:05,682 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 13:07:08,629 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 13:07:08,688 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 13:10:03,481 - aiogram.event - INFO - Update id=829685684 is handled. Duration 234 ms by bot id=8419782064
+2025-12-23 13:18:26,302 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 13:18:26,304 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 13:23:57,633 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 13:23:57,827 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 13:23:57,901 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 13:24:21,128 - aiogram.event - INFO - Update id=829685685 is handled. Duration 405 ms by bot id=8419782064
+2025-12-23 13:25:36,878 - aiogram.event - INFO - Update id=829685686 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 13:26:09,626 - aiogram.event - INFO - Update id=829685687 is handled. Duration 265 ms by bot id=8419782064
+2025-12-23 13:26:24,333 - aiogram.event - INFO - Update id=829685688 is handled. Duration 109 ms by bot id=8419782064
+2025-12-23 13:27:11,651 - __main__ - ERROR - Ошибка: update=Update(update_id=829685689, message=Message(message_id=10, date=datetime.datetime(2025, 12, 23, 10, 27, 12, tzinfo=TzInfo(UTC)), chat=Chat(id=1025181232, type='private', title=None, username='GladkikhB', first_name='Борис', last_name='Гладких', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=1025181232, is_bot=False, first_name='Борис', last_name='Гладких', username='GladkikhB', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='Гладких Борис Юрьевич', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=NameError("name 'get_shift_numbers_keyboard' is not defined")
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 1116, in process_full_name
+    reply_markup=get_shift_numbers_keyboard()
+NameError: name 'get_shift_numbers_keyboard' is not defined
+2025-12-23 13:27:11,859 - aiogram.event - INFO - Update id=829685689 is handled. Duration 219 ms by bot id=8419782064
+2025-12-23 13:29:49,287 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 13:29:49,288 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 13:55:00,360 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 13:55:00,542 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 13:55:00,598 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 13:56:29,020 - aiogram.event - INFO - Update id=829685690 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 13:56:44,410 - aiogram.event - INFO - Update id=829685691 is handled. Duration 219 ms by bot id=8419782064
+2025-12-23 13:56:58,732 - aiogram.event - INFO - Update id=829685692 is handled. Duration 94 ms by bot id=8419782064
+2025-12-23 13:57:12,870 - aiogram.event - INFO - Update id=829685693 is handled. Duration 77 ms by bot id=8419782064
+2025-12-23 13:57:43,240 - database - INFO - Добавлен сотрудник: Гладких Борис Юрьевич (ID: 1025181232)
+2025-12-23 13:57:43,544 - aiogram.event - INFO - Update id=829685694 is handled. Duration 360 ms by bot id=8419782064
+2025-12-23 14:10:10,681 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 14:10:10,682 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 14:11:17,063 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 14:11:17,256 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 14:11:17,317 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 14:11:46,234 - aiogram.event - INFO - Update id=829685695 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 14:11:59,440 - aiogram.event - INFO - Update id=829685696 is handled. Duration 218 ms by bot id=8419782064
+2025-12-23 14:16:23,924 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 14:16:23,925 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 14:24:07,054 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 14:24:07,253 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 14:24:07,322 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 14:24:29,844 - __main__ - ERROR - Ошибка: update=Update(update_id=829685697, message=Message(message_id=22, date=datetime.datetime(2025, 12, 23, 11, 24, 30, tzinfo=TzInfo(UTC)), chat=Chat(id=1025181232, type='private', title=None, username='GladkikhB', first_name='Борис', last_name='Гладких', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=1025181232, is_bot=False, first_name='Борис', last_name='Гладких', username='GladkikhB', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/график', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=NameError("name 'get_month_schedule' is not defined")
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 719, in cmd_schedule
+    schedule = get_month_schedule(user_id, today.year, today.month)
+NameError: name 'get_month_schedule' is not defined
+2025-12-23 14:24:30,127 - aiogram.event - INFO - Update id=829685697 is handled. Duration 281 ms by bot id=8419782064
+2025-12-23 14:24:37,125 - __main__ - ERROR - Ошибка: update=Update(update_id=829685698, message=Message(message_id=24, date=datetime.datetime(2025, 12, 23, 11, 24, 37, tzinfo=TzInfo(UTC)), chat=Chat(id=1025181232, type='private', title=None, username='GladkikhB', first_name='Борис', last_name='Гладких', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=1025181232, is_bot=False, first_name='Борис', last_name='Гладких', username='GladkikhB', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/статистика', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=NameError("name 'calculate_month_stats' is not defined")
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 700, in cmd_stats
+    stats = calculate_month_stats(user_id, today.year, today.month)
+NameError: name 'calculate_month_stats' is not defined
+2025-12-23 14:24:37,217 - aiogram.event - INFO - Update id=829685698 is handled. Duration 93 ms by bot id=8419782064
+2025-12-23 14:24:46,106 - aiogram.event - INFO - Update id=829685699 is handled. Duration 108 ms by bot id=8419782064
+2025-12-23 14:25:08,335 - aiogram.event - INFO - Update id=829685700 is handled. Duration 390 ms by bot id=8419782064
+2025-12-23 14:25:24,129 - aiogram.event - INFO - Update id=829685701 is handled. Duration 219 ms by bot id=8419782064
+2025-12-23 14:25:41,417 - aiogram.event - INFO - Update id=829685702 is handled. Duration 202 ms by bot id=8419782064
+2025-12-23 14:28:52,468 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 14:28:52,469 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 14:39:27,663 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 14:39:27,871 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 14:39:27,935 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 14:39:40,236 - aiogram.event - INFO - Update id=829685703 is handled. Duration 280 ms by bot id=8419782064
+2025-12-23 14:40:19,946 - aiogram.event - INFO - Update id=829685704 is handled. Duration 219 ms by bot id=8419782064
+2025-12-23 14:41:58,906 - aiogram.event - INFO - Update id=829685705 is handled. Duration 359 ms by bot id=8419782064
+2025-12-23 14:42:00,390 - aiogram.event - INFO - Update id=829685706 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 14:50:01,233 - aiogram.event - INFO - Update id=829685707 is handled. Duration 233 ms by bot id=8419782064
+2025-12-23 14:50:20,010 - aiogram.event - INFO - Update id=829685708 is handled. Duration 202 ms by bot id=8419782064
+2025-12-23 14:50:24,227 - aiogram.event - INFO - Update id=829685709 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 14:50:49,378 - aiogram.event - INFO - Update id=829685710 is handled. Duration 281 ms by bot id=8419782064
+2025-12-23 14:50:56,454 - aiogram.event - INFO - Update id=829685711 is handled. Duration 250 ms by bot id=8419782064
+2025-12-23 14:51:03,093 - aiogram.event - INFO - Update id=829685712 is handled. Duration 93 ms by bot id=8419782064
+2025-12-23 14:52:17,024 - aiogram.event - INFO - Update id=829685713 is handled. Duration 436 ms by bot id=8419782064
+2025-12-23 14:58:16,362 - aiogram.event - INFO - Update id=829685714 is handled. Duration 186 ms by bot id=8419782064
+2025-12-23 15:04:16,695 - aiogram.event - INFO - Update id=829685715 is handled. Duration 218 ms by bot id=8419782064
+2025-12-23 15:05:11,463 - aiogram.event - INFO - Update id=829685716 is handled. Duration 203 ms by bot id=8419782064
+2025-12-23 15:05:25,007 - aiogram.event - INFO - Update id=829685717 is handled. Duration 203 ms by bot id=8419782064
+2025-12-23 15:17:15,620 - aiogram.event - INFO - Update id=829685718 is handled. Duration 389 ms by bot id=8419782064
+2025-12-23 15:22:24,017 - aiogram.event - INFO - Update id=829685719 is handled. Duration 468 ms by bot id=8419782064
+2025-12-23 15:42:53,604 - aiogram.event - INFO - Update id=829685720 is handled. Duration 202 ms by bot id=8419782064
+2025-12-23 16:04:29,129 - aiogram.event - INFO - Update id=829685721 is handled. Duration 203 ms by bot id=8419782064
+2025-12-23 16:22:43,044 - aiogram.event - INFO - Update id=829685722 is handled. Duration 265 ms by bot id=8419782064
+2025-12-23 16:33:39,161 - aiogram.event - INFO - Update id=829685723 is handled. Duration 391 ms by bot id=8419782064
+2025-12-23 16:34:08,343 - aiogram.event - INFO - Update id=829685724 is handled. Duration 187 ms by bot id=8419782064
+2025-12-23 16:35:00,579 - aiogram.event - INFO - Update id=829685725 is handled. Duration 405 ms by bot id=8419782064
+2025-12-23 16:35:20,468 - database - INFO - Добавлен сотрудник: Тарынин Максим Олегович (ID: 604957670)
+2025-12-23 16:35:20,795 - aiogram.event - INFO - Update id=829685726 is handled. Duration 344 ms by bot id=8419782064
+2025-12-23 16:35:36,860 - aiogram.event - INFO - Update id=829685727 is handled. Duration 234 ms by bot id=8419782064
+2025-12-23 16:38:22,819 - aiogram.event - INFO - Update id=829685728 is handled. Duration 297 ms by bot id=8419782064
+2025-12-23 16:38:27,362 - aiogram.event - INFO - Update id=829685729 is handled. Duration 125 ms by bot id=8419782064
+2025-12-23 16:38:30,744 - aiogram.event - INFO - Update id=829685730 is handled. Duration 140 ms by bot id=8419782064
+2025-12-23 16:38:54,372 - aiogram.event - INFO - Update id=829685731 is not handled. Duration 15 ms by bot id=8419782064
+2025-12-23 16:39:09,964 - aiogram.event - INFO - Update id=829685732 is not handled. Duration 15 ms by bot id=8419782064
+2025-12-23 16:39:32,465 - __main__ - ERROR - Ошибка: update=Update(update_id=829685733, message=Message(message_id=78, date=datetime.datetime(2025, 12, 23, 13, 39, 32, tzinfo=TzInfo(UTC)), chat=Chat(id=1025181232, type='private', title=None, username='GladkikhB', first_name='Борис', last_name='Гладких', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=1025181232, is_bot=False, first_name='Борис', last_name='Гладких', username='GladkikhB', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/отпуск', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=TypeError('FSMContext.__init__() takes 3 positional arguments but 4 were given')
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 597, in cmd_vacation
+    await process_single_absence(message, "vacation")
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 623, in process_single_absence
+    temp_state = FSMContext(storage, message.chat.id, message.chat.id)
+TypeError: FSMContext.__init__() takes 3 positional arguments but 4 were given
+2025-12-23 16:39:32,803 - aiogram.event - INFO - Update id=829685733 is handled. Duration 360 ms by bot id=8419782064
+2025-12-23 16:39:34,816 - aiogram.event - INFO - Update id=829685734 is handled. Duration 109 ms by bot id=8419782064
+2025-12-23 16:39:58,656 - aiogram.event - INFO - Update id=829685735 is handled. Duration 297 ms by bot id=8419782064
+2025-12-23 16:47:10,099 - __main__ - ERROR - Ошибка: update=Update(update_id=829685736, message=Message(message_id=84, date=datetime.datetime(2025, 12, 23, 13, 47, 10, tzinfo=TzInfo(UTC)), chat=Chat(id=604957670, type='private', title=None, username='Osbyrn', first_name='Максим', last_name='Тарынин', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=604957670, is_bot=False, first_name='Максим', last_name='Тарынин', username='Osbyrn', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/start', entities=[MessageEntity(type='bot_command', offset=0, length=6, url=None, user=None, language=None, custom_emoji_id=None)], animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=ImportError("cannot import name 'get_simple_menu' from 'simple_menu' (C:\\Users\\kusja\\Desktop\\shifttracker-bot\\simple_menu.py)")
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 435, in cmd_start
+    from simple_menu import get_simple_menu
+ImportError: cannot import name 'get_simple_menu' from 'simple_menu' (C:\Users\kusja\Desktop\shifttracker-bot\simple_menu.py)
+2025-12-23 16:47:10,362 - aiogram.event - INFO - Update id=829685736 is handled. Duration 264 ms by bot id=8419782064
+2025-12-23 16:47:23,203 - __main__ - ERROR - Ошибка: update=Update(update_id=829685737, message=Message(message_id=86, date=datetime.datetime(2025, 12, 23, 13, 47, 23, tzinfo=TzInfo(UTC)), chat=Chat(id=604957670, type='private', title=None, username='Osbyrn', first_name='Максим', last_name='Тарынин', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=604957670, is_bot=False, first_name='Максим', last_name='Тарынин', username='Osbyrn', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/start', entities=[MessageEntity(type='bot_command', offset=0, length=6, url=None, user=None, language=None, custom_emoji_id=None)], animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=ImportError("cannot import name 'get_simple_menu' from 'simple_menu' (C:\\Users\\kusja\\Desktop\\shifttracker-bot\\simple_menu.py)")
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 435, in cmd_start
+    from simple_menu import get_simple_menu
+ImportError: cannot import name 'get_simple_menu' from 'simple_menu' (C:\Users\kusja\Desktop\shifttracker-bot\simple_menu.py)
+2025-12-23 16:47:23,334 - aiogram.event - INFO - Update id=829685737 is handled. Duration 125 ms by bot id=8419782064
+2025-12-23 16:49:15,621 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 16:49:15,622 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 16:49:45,362 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 16:49:45,559 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 16:49:45,689 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 16:50:19,028 - __main__ - ERROR - Ошибка: update=Update(update_id=829685738, message=Message(message_id=88, date=datetime.datetime(2025, 12, 23, 13, 50, 19, tzinfo=TzInfo(UTC)), chat=Chat(id=604957670, type='private', title=None, username='Osbyrn', first_name='Максим', last_name='Тарынин', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=604957670, is_bot=False, first_name='Максим', last_name='Тарынин', username='Osbyrn', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/start', entities=[MessageEntity(type='bot_command', offset=0, length=6, url=None, user=None, language=None, custom_emoji_id=None)], animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=ImportError("cannot import name 'get_simple_menu' from 'simple_menu' (C:\\Users\\kusja\\Desktop\\shifttracker-bot\\simple_menu.py)")
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 435, in cmd_start
+    from simple_menu import get_simple_menu
+ImportError: cannot import name 'get_simple_menu' from 'simple_menu' (C:\Users\kusja\Desktop\shifttracker-bot\simple_menu.py)
+2025-12-23 16:50:19,322 - aiogram.event - INFO - Update id=829685738 is handled. Duration 313 ms by bot id=8419782064
+2025-12-23 16:52:23,473 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 16:52:23,475 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 16:57:08,149 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 16:57:08,355 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 16:57:08,432 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 16:57:55,879 - __main__ - ERROR - Ошибка: update=Update(update_id=829685739, message=Message(message_id=90, date=datetime.datetime(2025, 12, 23, 13, 57, 56, tzinfo=TzInfo(UTC)), chat=Chat(id=604957670, type='private', title=None, username='Osbyrn', first_name='Максим', last_name='Тарынин', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=604957670, is_bot=False, first_name='Максим', last_name='Тарынин', username='Osbyrn', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/start', entities=[MessageEntity(type='bot_command', offset=0, length=6, url=None, user=None, language=None, custom_emoji_id=None)], animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=NameError("name 'get_simple_menu' is not defined")
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 457, in cmd_start
+    reply_markup=get_simple_menu(is_admin),
+NameError: name 'get_simple_menu' is not defined
+2025-12-23 16:57:56,143 - aiogram.event - INFO - Update id=829685739 is handled. Duration 264 ms by bot id=8419782064
+2025-12-23 17:03:07,140 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 17:03:07,142 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 17:03:07,709 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<Event.wait() running at C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\locks.py:214> wait_for=<Future cancelled> cb=[gather.<locals>._done_callback() at C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\tasks.py:720]>
+2025-12-23 17:03:07,712 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<Dispatcher._polling() done, defined at C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:323> exception=KeyboardInterrupt()>
+Traceback (most recent call last):
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1860, in _run_once
+    event_list = self._selector.select(timeout)
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 439, in select
+    self._poll(timeout)
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 788, in _poll
+    status = _overlapped.GetQueuedCompletionStatus(self._iocp, ms)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 206, in feed_ssldata
+    self._sslobj.unwrap()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 979, in unwrap
+    return self._sslobj.shutdown()
+ssl.SSLWantReadError: The operation did not complete (read) (_ssl.c:2672)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 1385, in <module>
+    await bot.delete_webhook(drop_pending_updates=True)
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 47, in run
+    _cancel_all_tasks(loop)
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\runners.py", line 63, in _cancel_all_tasks
+    loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 633, in run_until_complete
+    self.run_forever()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 600, in run_forever
+    self._run_once()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\base_events.py", line 1896, in _run_once
+    handle._run()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 344, in _polling
+    async for update in self._listen_updates(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 213, in _listen_updates
+    updates = await bot(get_updates, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\client\bot.py", line 432, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 167, in make_request
+    async with session.post(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiohttp\client.py", line 588, in _request
+    resp.close()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiohttp\client_reqrep.py", line 979, in close
+    self._connection.close()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiohttp\connector.py", line 171, in close
+    self._connector._release(self._key, self._protocol, should_close=True)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiohttp\connector.py", line 663, in _release
+    protocol.close()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiohttp\client_proto.py", line 63, in close
+    transport.close()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 316, in close
+    self._ssl_protocol._start_shutdown()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 599, in _start_shutdown
+    self._write_appdata(b'')
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 604, in _write_appdata
+    self._process_write_backlog()
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 686, in _process_write_backlog
+    ssldata = self._sslpipe.shutdown(self._finalize)
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 142, in shutdown
+    ssldata, appdata = self.feed_ssldata(b'')
+  File "C:\Users\kusja\AppData\Local\Programs\Python\Python310\lib\asyncio\sslproto.py", line 206, in feed_ssldata
+    self._sslobj.unwrap()
+KeyboardInterrupt
+2025-12-23 17:03:35,919 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 17:03:36,131 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 17:03:36,197 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 17:04:31,975 - aiogram.event - INFO - Update id=829685740 is handled. Duration 329 ms by bot id=8419782064
+2025-12-23 17:05:05,858 - aiogram.event - INFO - Update id=829685741 is handled. Duration 234 ms by bot id=8419782064
+2025-12-23 17:05:41,561 - aiogram.event - INFO - Update id=829685742 is handled. Duration 297 ms by bot id=8419782064
+2025-12-23 17:07:33,072 - aiogram.event - INFO - Update id=829685743 is handled. Duration 250 ms by bot id=8419782064
+2025-12-23 17:07:44,583 - aiogram.event - INFO - Update id=829685744 is handled. Duration 140 ms by bot id=8419782064
+2025-12-23 17:08:09,333 - aiogram.event - INFO - Update id=829685745 is handled. Duration 203 ms by bot id=8419782064
+2025-12-23 17:08:11,796 - aiogram.event - INFO - Update id=829685746 is handled. Duration 110 ms by bot id=8419782064
+2025-12-23 17:08:27,821 - aiogram.event - INFO - Update id=829685747 is handled. Duration 265 ms by bot id=8419782064
+2025-12-23 17:09:15,902 - __main__ - ERROR - Ошибка: update=Update(update_id=829685748, message=Message(message_id=108, date=datetime.datetime(2025, 12, 23, 14, 9, 16, tzinfo=TzInfo(UTC)), chat=Chat(id=1025181232, type='private', title=None, username='GladkikhB', first_name='Борис', last_name='Гладких', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=1025181232, is_bot=False, first_name='Борис', last_name='Гладких', username='GladkikhB', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/отпуск', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=TypeError('FSMContext.__init__() takes 3 positional arguments but 4 were given')
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 600, in cmd_vacation
+    await process_single_absence(message, "vacation")
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 626, in process_single_absence
+    temp_state = FSMContext(storage, message.chat.id, message.chat.id)
+TypeError: FSMContext.__init__() takes 3 positional arguments but 4 were given
+2025-12-23 17:09:16,151 - aiogram.event - INFO - Update id=829685748 is handled. Duration 266 ms by bot id=8419782064
+2025-12-23 17:09:22,087 - aiogram.event - INFO - Update id=829685749 is handled. Duration 125 ms by bot id=8419782064
+2025-12-23 17:09:41,810 - __main__ - ERROR - Ошибка: update=Update(update_id=829685750, message=Message(message_id=112, date=datetime.datetime(2025, 12, 23, 14, 9, 42, tzinfo=TzInfo(UTC)), chat=Chat(id=1025181232, type='private', title=None, username='GladkikhB', first_name='Борис', last_name='Гладких', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=1025181232, is_bot=False, first_name='Борис', last_name='Гладких', username='GladkikhB', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/больничный', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=TypeError('FSMContext.__init__() takes 3 positional arguments but 4 were given')
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 605, in cmd_sick
+    await process_single_absence(message, "sick")
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 626, in process_single_absence
+    temp_state = FSMContext(storage, message.chat.id, message.chat.id)
+TypeError: FSMContext.__init__() takes 3 positional arguments but 4 were given
+2025-12-23 17:09:42,207 - aiogram.event - INFO - Update id=829685750 is handled. Duration 405 ms by bot id=8419782064
+2025-12-23 17:09:43,857 - __main__ - ERROR - Ошибка: update=Update(update_id=829685751, message=Message(message_id=114, date=datetime.datetime(2025, 12, 23, 14, 9, 44, tzinfo=TzInfo(UTC)), chat=Chat(id=1025181232, type='private', title=None, username='GladkikhB', first_name='Борис', last_name='Гладких', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=1025181232, is_bot=False, first_name='Борис', last_name='Гладких', username='GladkikhB', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/за_счет', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=TypeError('FSMContext.__init__() takes 3 positional arguments but 4 were given')
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 610, in cmd_unpaid
+    await process_single_absence(message, "unpaid")
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 626, in process_single_absence
+    temp_state = FSMContext(storage, message.chat.id, message.chat.id)
+TypeError: FSMContext.__init__() takes 3 positional arguments but 4 were given
+2025-12-23 17:09:43,960 - aiogram.event - INFO - Update id=829685751 is handled. Duration 109 ms by bot id=8419782064
+2025-12-23 17:09:48,600 - aiogram.event - INFO - Update id=829685752 is handled. Duration 140 ms by bot id=8419782064
+2025-12-23 17:09:51,933 - aiogram.event - INFO - Update id=829685753 is handled. Duration 203 ms by bot id=8419782064
+2025-12-23 17:09:59,306 - aiogram.event - INFO - Update id=829685754 is handled. Duration 312 ms by bot id=8419782064
+2025-12-23 17:21:14,859 - aiogram.event - INFO - Update id=829685755 is handled. Duration 264 ms by bot id=8419782064
+2025-12-23 17:21:40,250 - __main__ - ERROR - Ошибка: update=Update(update_id=829685756, message=Message(message_id=124, date=datetime.datetime(2025, 12, 23, 14, 21, 40, tzinfo=TzInfo(UTC)), chat=Chat(id=1025181232, type='private', title=None, username='GladkikhB', first_name='Борис', last_name='Гладких', is_forum=None, photo=None, active_usernames=None, emoji_status_custom_emoji_id=None, emoji_status_expiration_date=None, bio=None, has_private_forwards=None, has_restricted_voice_and_video_messages=None, join_to_send_messages=None, join_by_request=None, description=None, invite_link=None, pinned_message=None, permissions=None, slow_mode_delay=None, message_auto_delete_time=None, has_aggressive_anti_spam_enabled=None, has_hidden_members=None, has_protected_content=None, sticker_set_name=None, can_set_sticker_set=None, linked_chat_id=None, location=None), message_thread_id=None, from_user=User(id=1025181232, is_bot=False, first_name='Борис', last_name='Гладких', username='GladkikhB', language_code='ru', is_premium=None, added_to_attachment_menu=None, can_join_groups=None, can_read_all_group_messages=None, supports_inline_queries=None), sender_chat=None, forward_from=None, forward_from_chat=None, forward_from_message_id=None, forward_signature=None, forward_sender_name=None, forward_date=None, is_topic_message=None, is_automatic_forward=None, reply_to_message=None, via_bot=None, edit_date=None, has_protected_content=None, media_group_id=None, author_signature=None, text='/отпуск', entities=None, animation=None, audio=None, document=None, photo=None, sticker=None, story=None, video=None, video_note=None, voice=None, caption=None, caption_entities=None, has_media_spoiler=None, contact=None, dice=None, game=None, poll=None, venue=None, location=None, new_chat_members=None, left_chat_member=None, new_chat_title=None, new_chat_photo=None, delete_chat_photo=None, group_chat_created=None, supergroup_chat_created=None, channel_chat_created=None, message_auto_delete_timer_changed=None, migrate_to_chat_id=None, migrate_from_chat_id=None, pinned_message=None, invoice=None, successful_payment=None, user_shared=None, chat_shared=None, connected_website=None, write_access_allowed=None, passport_data=None, proximity_alert_triggered=None, forum_topic_created=None, forum_topic_edited=None, forum_topic_closed=None, forum_topic_reopened=None, general_forum_topic_hidden=None, general_forum_topic_unhidden=None, video_chat_scheduled=None, video_chat_started=None, video_chat_ended=None, video_chat_participants_invited=None, web_app_data=None, reply_markup=None), edited_message=None, channel_post=None, edited_channel_post=None, inline_query=None, chosen_inline_result=None, callback_query=None, shipping_query=None, pre_checkout_query=None, poll=None, poll_answer=None, my_chat_member=None, chat_member=None, chat_join_request=None) exception=TypeError('FSMContext.__init__() takes 3 positional arguments but 4 were given')
+Traceback (most recent call last):
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\fsm\middleware.py", line 39, in __call__
+    return await handler(event, data)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 275, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\telegram.py", line 120, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "C:\Users\kusja\Desktop\shifttracker-bot\venv\lib\site-packages\aiogram\dispatcher\event\handler.py", line 42, in call
+    return await wrapped()
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 600, in cmd_vacation
+    await process_single_absence(message, "vacation")
+  File "C:\Users\kusja\Desktop\shifttracker-bot\bot.py", line 626, in process_single_absence
+    temp_state = FSMContext(storage, message.chat.id, message.chat.id)
+TypeError: FSMContext.__init__() takes 3 positional arguments but 4 were given
+2025-12-23 17:21:40,505 - aiogram.event - INFO - Update id=829685756 is handled. Duration 250 ms by bot id=8419782064
+2025-12-23 17:26:54,053 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 17:26:54,054 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 17:28:10,750 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 17:28:10,946 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 17:28:11,017 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 17:28:26,688 - aiogram.event - INFO - Update id=829685758 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 17:28:35,621 - aiogram.event - INFO - Update id=829685759 is handled. Duration 218 ms by bot id=8419782064
+2025-12-23 17:28:38,419 - aiogram.event - INFO - Update id=829685760 is handled. Duration 313 ms by bot id=8419782064
+2025-12-23 17:28:40,333 - aiogram.event - INFO - Update id=829685761 is handled. Duration 203 ms by bot id=8419782064
+2025-12-23 17:28:48,021 - aiogram.event - INFO - Update id=829685762 is handled. Duration 108 ms by bot id=8419782064
+2025-12-23 17:29:22,416 - aiogram.event - INFO - Update id=829685763 is handled. Duration 282 ms by bot id=8419782064
+2025-12-23 17:29:25,620 - aiogram.event - INFO - Update id=829685764 is handled. Duration 171 ms by bot id=8419782064
+2025-12-23 17:29:33,426 - aiogram.event - INFO - Update id=829685765 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 17:29:40,437 - aiogram.event - INFO - Update id=829685766 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 17:30:37,118 - aiogram.event - INFO - Update id=829685767 is handled. Duration 202 ms by bot id=8419782064
+2025-12-23 17:44:29,056 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 17:44:29,056 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 17:45:06,283 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 17:45:06,473 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 17:45:06,537 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 17:45:16,435 - aiogram.event - INFO - Update id=829685768 is handled. Duration 218 ms by bot id=8419782064
+2025-12-23 17:45:19,713 - aiogram.event - INFO - Update id=829685769 is handled. Duration 171 ms by bot id=8419782064
+2025-12-23 17:45:30,923 - aiogram.event - INFO - Update id=829685770 is handled. Duration 265 ms by bot id=8419782064
+2025-12-23 17:45:34,017 - aiogram.event - INFO - Update id=829685771 is handled. Duration 108 ms by bot id=8419782064
+2025-12-23 17:45:43,916 - aiogram.event - INFO - Update id=829685772 is handled. Duration 125 ms by bot id=8419782064
+2025-12-23 17:45:53,447 - aiogram.event - INFO - Update id=829685773 is handled. Duration 63 ms by bot id=8419782064
+2025-12-23 17:45:54,588 - aiogram.event - INFO - Update id=829685774 is not handled. Duration 15 ms by bot id=8419782064
+2025-12-23 17:45:58,208 - aiogram.event - INFO - Update id=829685775 is handled. Duration 78 ms by bot id=8419782064
+2025-12-23 17:46:07,385 - aiogram.event - INFO - Update id=829685776 is handled. Duration 125 ms by bot id=8419782064
+2025-12-23 17:46:11,934 - aiogram.event - INFO - Update id=829685777 is handled. Duration 500 ms by bot id=8419782064
+2025-12-23 17:46:44,764 - aiogram.event - INFO - Update id=829685778 is handled. Duration 202 ms by bot id=8419782064
+2025-12-23 17:46:50,951 - aiogram.event - INFO - Update id=829685779 is handled. Duration 109 ms by bot id=8419782064
+2025-12-23 17:51:18,710 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 17:51:18,711 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 17:52:11,511 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 17:52:11,710 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 17:52:11,771 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 17:52:32,078 - aiogram.event - INFO - Update id=829685780 is handled. Duration 234 ms by bot id=8419782064
+2025-12-23 17:52:36,628 - aiogram.event - INFO - Update id=829685781 is handled. Duration 235 ms by bot id=8419782064
+2025-12-23 17:54:05,189 - aiogram.event - INFO - Update id=829685782 is handled. Duration 203 ms by bot id=8419782064
+2025-12-23 17:54:06,850 - database - INFO - Добавлен сотрудник: Дмитриев Владимир Александрович (ID: 1255315670)
+2025-12-23 17:54:07,077 - aiogram.event - INFO - Update id=829685783 is handled. Duration 250 ms by bot id=8419782064
+2025-12-23 17:55:08,550 - aiogram.event - INFO - Update id=829685784 is handled. Duration 235 ms by bot id=8419782064
+2025-12-23 17:55:25,693 - aiogram.event - INFO - Update id=829685785 is handled. Duration 203 ms by bot id=8419782064
+2025-12-23 17:55:37,925 - aiogram.event - INFO - Update id=829685786 is handled. Duration 125 ms by bot id=8419782064
+2025-12-23 17:55:39,238 - aiogram.event - INFO - Update id=829685787 is handled. Duration 77 ms by bot id=8419782064
+2025-12-23 17:55:42,083 - aiogram.event - INFO - Update id=829685788 is handled. Duration 155 ms by bot id=8419782064
+2025-12-23 17:55:44,241 - aiogram.event - INFO - Update id=829685789 is handled. Duration 280 ms by bot id=8419782064
+2025-12-23 17:55:48,723 - aiogram.event - INFO - Update id=829685790 is handled. Duration 171 ms by bot id=8419782064
+2025-12-23 17:55:55,005 - aiogram.event - INFO - Update id=829685791 is handled. Duration 155 ms by bot id=8419782064
+2025-12-23 17:56:01,609 - aiogram.event - INFO - Update id=829685792 is handled. Duration 94 ms by bot id=8419782064
+2025-12-23 17:56:27,449 - aiogram.event - INFO - Update id=829685793 is handled. Duration 296 ms by bot id=8419782064
+2025-12-23 17:56:34,045 - aiogram.event - INFO - Update id=829685794 is handled. Duration 235 ms by bot id=8419782064
+2025-12-23 17:56:35,326 - aiogram.event - INFO - Update id=829685795 is handled. Duration 140 ms by bot id=8419782064
+2025-12-23 17:56:38,985 - aiogram.event - INFO - Update id=829685796 is handled. Duration 171 ms by bot id=8419782064
+2025-12-23 17:57:11,818 - aiogram.event - INFO - Update id=829685797 is handled. Duration 234 ms by bot id=8419782064
+2025-12-23 17:57:22,116 - aiogram.event - INFO - Update id=829685798 is handled. Duration 77 ms by bot id=8419782064
+2025-12-23 17:57:28,081 - aiogram.event - INFO - Update id=829685799 is handled. Duration 188 ms by bot id=8419782064
+2025-12-23 17:57:29,819 - aiogram.event - INFO - Update id=829685800 is handled. Duration 139 ms by bot id=8419782064
+2025-12-23 17:58:15,685 - aiogram.event - INFO - Update id=829685801 is handled. Duration 264 ms by bot id=8419782064
+2025-12-23 17:58:18,817 - aiogram.event - INFO - Update id=829685802 is handled. Duration 125 ms by bot id=8419782064
+2025-12-23 17:58:37,653 - aiogram.event - INFO - Update id=829685803 is handled. Duration 344 ms by bot id=8419782064
+2025-12-23 17:58:40,712 - aiogram.event - INFO - Update id=829685804 is handled. Duration 187 ms by bot id=8419782064
+2025-12-23 17:58:43,927 - aiogram.event - INFO - Update id=829685805 is handled. Duration 78 ms by bot id=8419782064
+2025-12-23 17:58:45,717 - aiogram.event - INFO - Update id=829685806 is handled. Duration 94 ms by bot id=8419782064
+2025-12-23 17:58:47,930 - aiogram.event - INFO - Update id=829685807 is handled. Duration 250 ms by bot id=8419782064
+2025-12-23 17:58:50,173 - aiogram.event - INFO - Update id=829685808 is handled. Duration 250 ms by bot id=8419782064
+2025-12-23 17:59:11,857 - aiogram.event - INFO - Update id=829685809 is handled. Duration 219 ms by bot id=8419782064
+2025-12-23 17:59:13,936 - aiogram.event - INFO - Update id=829685810 is handled. Duration 203 ms by bot id=8419782064
+2025-12-23 17:59:34,142 - aiogram.event - INFO - Update id=829685811 is handled. Duration 389 ms by bot id=8419782064
+2025-12-23 17:59:36,602 - aiogram.event - INFO - Update id=829685812 is handled. Duration 171 ms by bot id=8419782064
+2025-12-23 17:59:40,117 - aiogram.event - INFO - Update id=829685813 is handled. Duration 110 ms by bot id=8419782064
+2025-12-23 17:59:42,335 - aiogram.event - INFO - Update id=829685814 is handled. Duration 109 ms by bot id=8419782064
+2025-12-23 17:59:44,567 - aiogram.event - INFO - Update id=829685815 is handled. Duration 328 ms by bot id=8419782064
+2025-12-23 17:59:47,088 - aiogram.event - INFO - Update id=829685816 is handled. Duration 156 ms by bot id=8419782064
+2025-12-23 17:59:51,628 - aiogram.event - INFO - Update id=829685817 is handled. Duration 110 ms by bot id=8419782064
+2025-12-23 17:59:57,273 - aiogram.event - INFO - Update id=829685818 is handled. Duration 156 ms by bot id=8419782064
+2025-12-23 18:00:36,659 - aiogram.event - INFO - Update id=829685819 is handled. Duration 2266 ms by bot id=8419782064
+2025-12-23 18:00:38,904 - aiogram.event - INFO - Update id=829685820 is handled. Duration 1734 ms by bot id=8419782064
+2025-12-23 18:00:43,792 - aiogram.event - INFO - Update id=829685821 is handled. Duration 844 ms by bot id=8419782064
+2025-12-23 18:00:46,997 - aiogram.event - INFO - Update id=829685822 is handled. Duration 796 ms by bot id=8419782064
+2025-12-23 18:00:50,246 - aiogram.event - INFO - Update id=829685823 is handled. Duration 265 ms by bot id=8419782064
+2025-12-23 18:00:52,403 - aiogram.event - INFO - Update id=829685824 is handled. Duration 219 ms by bot id=8419782064
+2025-12-23 18:00:57,995 - aiogram.event - INFO - Update id=829685825 is handled. Duration 93 ms by bot id=8419782064
+2025-12-23 18:00:59,771 - aiogram.event - INFO - Update id=829685826 is handled. Duration 155 ms by bot id=8419782064
+2025-12-23 18:01:01,918 - aiogram.event - INFO - Update id=829685827 is handled. Duration 282 ms by bot id=8419782064
+2025-12-23 18:01:08,765 - aiogram.event - INFO - Update id=829685828 is handled. Duration 170 ms by bot id=8419782064
+2025-12-23 18:01:12,195 - aiogram.event - INFO - Update id=829685829 is handled. Duration 155 ms by bot id=8419782064
+2025-12-23 18:01:45,610 - aiogram.event - INFO - Update id=829685830 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 18:01:47,739 - aiogram.event - INFO - Update id=829685831 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 18:01:49,213 - aiogram.event - INFO - Update id=829685832 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 18:01:59,110 - aiogram.event - INFO - Update id=829685833 is handled. Duration 280 ms by bot id=8419782064
+2025-12-23 18:07:20,781 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 18:07:20,782 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-23 18:08:05,394 - __main__ - INFO - Запуск бота ShiftTracker...
+2025-12-23 18:08:05,600 - aiogram.dispatcher - INFO - Start polling
+2025-12-23 18:08:05,674 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 18:08:18,719 - aiogram.event - INFO - Update id=829685834 is handled. Duration 296 ms by bot id=8419782064
+2025-12-23 18:08:22,721 - aiogram.event - INFO - Update id=829685835 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 18:13:11,025 - aiogram.event - INFO - Update id=829685836 is not handled. Duration 16 ms by bot id=8419782064
+2025-12-23 18:13:17,233 - aiogram.event - INFO - Update id=829685837 is handled. Duration 359 ms by bot id=8419782064
+2025-12-23 18:13:21,147 - aiogram.event - INFO - Update id=829685838 is handled. Duration 155 ms by bot id=8419782064
+2025-12-23 18:13:23,592 - aiogram.event - INFO - Update id=829685839 is handled. Duration 296 ms by bot id=8419782064
+2025-12-23 18:13:26,093 - aiogram.event - INFO - Update id=829685840 is handled. Duration 296 ms by bot id=8419782064
+2025-12-23 18:13:33,588 - aiogram.event - INFO - Update id=829685841 is handled. Duration 94 ms by bot id=8419782064
+2025-12-23 18:13:37,403 - aiogram.event - INFO - Update id=829685842 is handled. Duration 78 ms by bot id=8419782064
+2025-12-23 18:13:39,365 - aiogram.event - INFO - Update id=829685843 is not handled. Duration 0 ms by bot id=8419782064
+2025-12-23 18:13:45,802 - aiogram.event - INFO - Update id=829685844 is handled. Duration 94 ms by bot id=8419782064
+2025-12-23 18:13:51,202 - aiogram.event - INFO - Update id=829685845 is handled. Duration 484 ms by bot id=8419782064
+2025-12-23 18:13:53,421 - aiogram.event - INFO - Update id=829685846 is handled. Duration 110 ms by bot id=8419782064
+2025-12-23 18:13:55,548 - aiogram.event - INFO - Update id=829685847 is handled. Duration 188 ms by bot id=8419782064
+2025-12-23 18:13:56,905 - aiogram.event - INFO - Update id=829685848 is handled. Duration 141 ms by bot id=8419782064
+2025-12-23 18:13:58,153 - aiogram.event - INFO - Update id=829685849 is handled. Duration 172 ms by bot id=8419782064
+2025-12-23 18:13:59,414 - aiogram.event - INFO - Update id=829685850 is handled. Duration 110 ms by bot id=8419782064
+2025-12-23 18:14:01,084 - aiogram.event - INFO - Update id=829685851 is handled. Duration 390 ms by bot id=8419782064
+2025-12-23 18:14:07,316 - aiogram.event - INFO - Update id=829685852 is handled. Duration 187 ms by bot id=8419782064
+2025-12-23 18:16:53,296 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ ВЭШ'
+2025-12-23 18:16:53,296 - aiogram.dispatcher - INFO - Polling stopped
+2026-01-12 09:20:16,417 - __main__ - INFO - Запуск бота ShiftTracker...
+2026-01-12 09:20:16,720 - aiogram.dispatcher - INFO - Start polling
+2026-01-12 09:20:16,797 - aiogram.dispatcher - INFO - Run polling for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ'
+2026-01-12 09:21:22,822 - aiogram.event - INFO - Update id=829685863 is not handled. Duration 16 ms by bot id=8419782064
+2026-01-12 09:21:23,061 - aiogram.event - INFO - Update id=829685862 is handled. Duration 250 ms by bot id=8419782064
+2026-01-12 09:21:33,829 - aiogram.event - INFO - Update id=829685864 is handled. Duration 156 ms by bot id=8419782064
+2026-01-12 09:21:51,415 - aiogram.event - INFO - Update id=829685865 is handled. Duration 313 ms by bot id=8419782064
+2026-01-12 09:22:47,574 - aiogram.event - INFO - Update id=829685866 is handled. Duration 562 ms by bot id=8419782064
+2026-01-12 09:22:50,142 - aiogram.event - INFO - Update id=829685867 is handled. Duration 202 ms by bot id=8419782064
+2026-01-12 09:22:57,956 - aiogram.event - INFO - Update id=829685868 is handled. Duration 234 ms by bot id=8419782064
+2026-01-12 09:23:04,460 - aiogram.event - INFO - Update id=829685869 is handled. Duration 187 ms by bot id=8419782064
+2026-01-12 09:23:08,499 - aiogram.event - INFO - Update id=829685870 is handled. Duration 94 ms by bot id=8419782064
+2026-01-12 09:23:10,143 - aiogram.event - INFO - Update id=829685871 is handled. Duration 155 ms by bot id=8419782064
+2026-01-12 09:23:22,813 - aiogram.event - INFO - Update id=829685872 is handled. Duration 233 ms by bot id=8419782064
+2026-01-12 09:23:25,783 - aiogram.event - INFO - Update id=829685873 is handled. Duration 172 ms by bot id=8419782064
+2026-01-12 09:23:30,340 - aiogram.event - INFO - Update id=829685874 is handled. Duration 171 ms by bot id=8419782064
+2026-01-12 09:23:33,037 - aiogram.event - INFO - Update id=829685875 is handled. Duration 110 ms by bot id=8419782064
+2026-01-12 09:23:57,992 - aiogram.event - INFO - Update id=829685876 is handled. Duration 422 ms by bot id=8419782064
+2026-01-12 09:24:01,051 - aiogram.event - INFO - Update id=829685877 is handled. Duration 171 ms by bot id=8419782064
+2026-01-12 09:24:07,809 - aiogram.event - INFO - Update id=829685878 is handled. Duration 2546 ms by bot id=8419782064
+2026-01-12 09:24:09,835 - aiogram.event - INFO - Update id=829685879 is handled. Duration 452 ms by bot id=8419782064
+2026-01-12 09:24:17,066 - aiogram.event - INFO - Update id=829685880 is handled. Duration 250 ms by bot id=8419782064
+2026-01-12 09:24:19,443 - aiogram.event - INFO - Update id=829685881 is handled. Duration 172 ms by bot id=8419782064
+2026-01-12 09:24:25,738 - aiogram.event - INFO - Update id=829685882 is handled. Duration 188 ms by bot id=8419782064
+2026-01-12 09:24:33,711 - aiogram.event - INFO - Update id=829685883 is handled. Duration 562 ms by bot id=8419782064
+2026-01-12 09:24:42,202 - aiogram.event - INFO - Update id=829685884 is handled. Duration 172 ms by bot id=8419782064
+2026-01-12 09:24:46,190 - aiogram.event - INFO - Update id=829685885 is handled. Duration 1187 ms by bot id=8419782064
+2026-01-12 09:24:50,526 - aiogram.event - INFO - Update id=829685886 is handled. Duration 655 ms by bot id=8419782064
+2026-01-12 09:25:59,154 - aiogram.event - INFO - Update id=829685887 is handled. Duration 265 ms by bot id=8419782064
+2026-01-12 09:33:33,617 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 121] Превышен таймаут семафора
+2026-01-12 09:33:33,618 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8419782064)
+2026-01-12 09:33:58,716 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8419782064)
+2026-01-12 09:34:48,528 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 121] Превышен таймаут семафора
+2026-01-12 09:34:48,529 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8419782064)
+2026-01-12 09:35:18,655 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8419782064)
+2026-01-12 09:48:22,800 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 121] Превышен таймаут семафора
+2026-01-12 09:48:22,801 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8419782064)
+2026-01-12 09:48:34,005 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8419782064)
+2026-01-12 09:57:42,710 - aiogram.dispatcher - INFO - Polling stopped for bot @KBshifttracker_bot id=8419782064 - '📅ГРАФИК КБ'
+2026-01-12 09:57:42,710 - aiogram.dispatcher - INFO - Polling stopped
