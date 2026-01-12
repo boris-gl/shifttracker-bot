@@ -14,7 +14,12 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 from aiogram.utils.markdown import hbold
 
 from config import BOT_TOKEN, ADMIN_IDS
-from database import db
+try:
+    from database_postgres import db
+    print("✅ Используем PostgreSQL базу данных")
+except ImportError:
+    from database import db
+    print("⚠️ Используем SQLite базу данных")
 from keyboards import *
 from calculations import *
 
