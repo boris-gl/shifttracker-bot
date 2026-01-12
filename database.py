@@ -7,6 +7,21 @@ from config import DB_PATH
 logger = logging.getLogger(__name__)
 
 class Database:
+    def __init__(self, db_path: str = None):
+        # Автоматическое определение пути для облака
+        if db_path is None:
+            if 'RENDER' in os.environ or 'RAILWAY' in os.environ:
+                # Для облачных платформ используем /tmp/
+                self.db_path = "/tmp/database.db"
+                logger.info(f"Используем базу данных в /tmp/database.db")
+            else:
+                self.db_path = "database.db"
+        else:
+            self.db_path = db_path
+        
+        logger.info(f"База данных: {self.db_path}")
+        self.init_database()
+        
     def __init__(self, db_path: str = DB_PATH):
         self.db_path = db_path
         self.init_database()
